@@ -2,17 +2,18 @@
 
 The official website for ASRG — an independent, community-run reading group focused on the internals of systems software.
 
-**Live site:** https://2spacemasterrace.github.io/asrg/
+**Live site:** [https://asrg-gg.github.io/](https://asrg-gg.github.io/)
 
 ## About
 
-ASRG meets monthly to read papers, book chapters, and codebases covering compilers, databases, operating systems, distributed systems, and more. All backgrounds welcome.
+ASRG meets monthly to read papers, book chapters, and codebases covering compilers, databases, operating systems, distributed systems, and more. People from all backgrounds are welcome!
 
-- **Discord:** https://discord.gg/BtzP3eH4R3
 - **WhatsApp:** https://chat.whatsapp.com/CQmHWWzGzVeHLC6TcuGmmm
-- **YouTube:** https://www.youtube.com/@ArcaneSystemsReadingGroup
-- **X:** https://x.com/asrg_gg
+- **Substack:** https://substack.com/@nanodijkstra
 - **Twitch:** https://www.twitch.tv/nanod1jkstra
+- **YouTube:** https://www.youtube.com/@ArcaneSystemsReadingGroup
+- **Discord:** https://discord.gg/BtzP3eH4R3
+- **X:** https://x.com/asrg_gg
 
 ## Development
 
