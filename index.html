@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arcane Systems Reading Group</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,47 +16,65 @@
 
     <main>
         <section>
-            <p>ASRG is an independent, community-run reading group focused on the internals of systems software. We are not affiliated with any company.</p>
+            <p>ASRG is an independent, community-run study group focused on the internals of computer systems.</p>
 
-            <p>We meet monthly. Each session we pick a paper, book chapter, or codebase and work through it together. You are not expected to have attended previous sessions &mdash; all backgrounds are welcome. The goal is to learn and build, not to pitch products.</p>
+            <p>More accurately, it's a technical retreat for curious programmers to come together, learn, and build the things they love. It's entirely collaborative, self-directed, and open to everyone — no prior attendance required, and adherence to the Geneva Convention is optional. We get together to do things like:</p>
 
-            <p>Recordings of past sessions are available on <a href="https://www.youtube.com/@ArcaneSystemsReadingGroup">YouTube</a>.</p>
-        </section>
+            <ul class="plus-list">
+                <li>Read technical books such as <em>Designing Data-Intensive Applications</em></li>
+                <li>Break down research papers such as MapReduce</li>
+                <li>Contribute to open-source projects like Chromium and RocksDB</li>
+                <li>Run monthly hack nights, AMAs &amp; more</li>
+            </ul>
 
-        <section>
-            <h2>Philosophy</h2>
-
-            <blockquote>
-                <p><i>&ldquo;Systems programming is a way of modelling software development. It&rsquo;s not about a category of what you are working on &mdash; it&rsquo;s a way of looking at the problem. An excellent systems programmer fully understands the systems involved.&rdquo;</i></p>
-                <footer>&mdash; <i>Andrew Kelley</i></footer>
-            </blockquote>
-
-            <p>Computer systems are the building blocks of applications and the fabric that ties them together &mdash; databases, networks, virtualization, programming languages, compilers, distributed algorithms, optimizers, orchestrators, verifiers, libraries&hellip;</p>
-
-            <p>We welcome people from all backgrounds. Technology is used by everyone, and diverse experiences enrich communal discourse. All you need is a computer. Sharing knowledge with others is more fun, provides helpful context, and builds a community that deeply values curiosity and individual empowerment.</p>
-
-            <p>Computers are pretty cool. Let&rsquo;s explore.</p>
+            <p>We meet once a month on a Sunday afternoon, the exact date is announced in the group chat and in this website. Feel free to drop in, see if it's your thing, and stick around. Recordings of past sessions are available on <a href="https://www.youtube.com/@ArcaneSystemsReadingGroup">YouTube</a>.</p>
         </section>
 
         <section>
             <h2>What we explore</h2>
 
-            <p>Members build, debug, test, and read about:</p>
+            <p>We cover a broad range of systems topics, including:</p>
 
             <ul>
-                <li>Compilers, parsers, virtual machines, IDEs, and profiling tools</li>
-                <li>Compiler and language design and implementation</li>
-                <li>Databases and storage systems: OLTP (MySQL, Postgres, SQLite), OLAP (ClickHouse, Druid, Snowflake), NoSQL (Cassandra, Redis, MongoDB, Neo4j), NewSQL (CockroachDB, VoltDB, NuoDB), and cloud-native (Cosmos DB, DynamoDB, Aurora)</li>
-                <li>Networking stacks, internet protocols, and distributed systems</li>
-                <li>Distributed and concurrent data systems</li>
-                <li>Operating systems, kernels, and device drivers</li>
-                <li>Large-scale infrastructure, low-latency services, and high-availability systems</li>
-                <li>Formal methods, modelling, and verification</li>
-                <li>Browser engines, kernel development, and systems security</li>
-                <li>Algorithms, data structures, performance optimization, and HPC</li>
-                <li>Embedded systems, IoT, and robotics</li>
-                <li>AI/ML infrastructure, training systems, and inference optimization</li>
-                <li>Virtualization, hypervisors, and emulators</li>
+                <li>Programming Languages, Compilers, Parsers, and Developer Tooling</li>
+                <li>Databases and Storage Engines: OLTP, OLAP, NoSQL, NewSQL, and Cloud-Native Systems</li>
+                <li>Networking Stacks, Internet Protocols, and Browser Engines</li>
+                <li>Distributed and Concurrent Systems</li>
+                <li>Operating Systems, Kernels, and Device Drivers</li>
+                <li>Virtualization, Hypervisors, and Emulators</li>
+                <li>Formal Methods, Modelling, and Verification</li>
+                <li>Large-Scale Infrastructure, Service Meshes, and Serverless Runtimes</li>
+                <li>Advanced Algorithms and Data Structures, CPU Profiling, and SIMD/Vectorization</li>
+                <li>Machine Learning Systems, Deep Learning Models, and GPU Programming</li>
+            </ul>
+
+            <p>And here's a list of potential ideas we will work on:</p>
+
+            <ul>
+                <li>Internals of cool software: Lichess, the Zig compiler, the V8 JavaScript engine, WebAssembly, etc.</li>
+                <li>Deep diving into distributed systems: implementing Raft, reading papers, solving challenges.</li>
+                <li>Building your own microVMs for serverless computing (think AWS Firecracker).</li>
+                <li>Linux from scratch, writing containers from the ground up, breaking down Nix.</li>
+                <li>Storage-level systems engineering (e.g. xNVMe), comparing media codecs, rebuilding the Ethereum Virtual Machine.</li>
+                <li>Graphics programming: write your own shaders, dissect the Godot game engine.</li>
+                <li>Exploring cool algorithms: Knuth–Morris–Pratt, PageRank, Twitter's recommendation algorithm, Apple's NeuralHash.</li>
+                <li>Crash course on FPGAs &amp; ASICs, how Jane Street uses OCaml, CppCon watch parties.</li>
+                <li>Running DOOM in GitHub Actions and every other place you can think of.</li>
+                <li>Designing your own programming language, writing cursed regex &amp; so much more.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>BSOD: Bimonthly Sessions of Development</h2>
+
+            <p>BSOD is an intense week-long jam where members implement a piece of software from scratch. Writing something from scratch turns theory into practice. Here's a bunch of ideas in mind:</p>
+
+            <ul>
+                <li><strong>ZigFest:</strong> 8-day crash course into Zig and systems engineering: SIMD algorithms, TCP/IP from scratch, in-memory cache, and rebuilding Redis.</li>
+                <li><strong>Deployment from Scratch:</strong> Over-engineering a website in the 21st century: servers, databases, and production fundamentals.</li>
+                <li><strong>OS-Dev:</strong> 4-week speedrun building a mini OS with Rust and C: kernel, C runtime, concurrency, and hypervisors.</li>
+                <li><strong>UNIX Jam:</strong> 1-week festival of systems programming: io_uring, eBPF, coreutils from scratch, distributed challenges, and x86 assembly.</li>
+                <li><strong>Compiler Construction:</strong> 10-day jam building modern compilers: optimization techniques, virtual machines, and experimental language features.</li>
             </ul>
         </section>
 
@@ -71,42 +92,17 @@
                 <tbody>
                     <tr>
                         <td>TBD</td>
-                        <td>Linux Kernel Module Programming</td>
-                        <td><a href="https://github.com/2SpaceMasterRace">vxsha-256</a></td>
-                    </tr>
-                    <tr>
                         <td>TBD</td>
-                        <td>Reviewing DOOM &mdash; BSP, Fast Inverse Square Root &amp; the Quake III Engine</td>
-                        <td><a href="https://github.com/2SpaceMasterRace">vxsha-256</a></td>
+                        <td><a href="https://x.com/nanod1jkstra">Hari Varsha</a></td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
         <section>
-            <h2>BSOD &mdash; Bimonthly Sessions of Development</h2>
-
-            <p>BSOD is an intense week-long jam where members implement a piece of software from scratch. Writing something from scratch turns theory into practice.</p>
-
-            <ul>
-                <li><strong>ZigFest</strong> &mdash; 8-day crash course into Zig and systems engineering: SIMD algorithms, TCP/IP from scratch, in-memory cache, and rebuilding Redis.</li>
-                <li><strong>Deployment from Scratch</strong> &mdash; Over-engineering a website in the 21st century: servers, databases, and production fundamentals.</li>
-                <li><strong>OS-Dev</strong> &mdash; 4-week speedrun building a mini OS with Rust and C: kernel, C runtime, concurrency, and hypervisors.</li>
-                <li><strong>UNIX Jam</strong> &mdash; 1-week festival of systems programming: io_uring, eBPF, coreutils from scratch, distributed challenges, and x86 assembly.</li>
-                <li><strong>Compiler Construction</strong> &mdash; 10-day jam building modern compilers: optimization techniques, virtual machines, and experimental language features.</li>
-            </ul>
-        </section>
-
-        <section>
-            <p>Join the community on <a href="https://discord.gg/BtzP3eH4R3">Discord</a> or <a href="https://chat.whatsapp.com/CQmHWWzGzVeHLC6TcuGmmm">WhatsApp</a>. Sessions are announced in the group chat.</p>
-
-            <p>Interested in presenting? Send an <a href="mailto:v.harivarsha@gmail.com">email</a>.</p>
-        </section>
-
-        <section>
             <h2>Brought to you by</h2>
 
-            <p>ASRG is organized by <a href="https://x.com/asrg_gg">@asrg_gg</a>. Follow us on <a href="https://x.com/asrg_gg">X</a>, <a href="https://www.youtube.com/@ArcaneSystemsReadingGroup">YouTube</a>, and <a href="https://www.twitch.tv/nanod1jkstra">Twitch</a>.</p>
+            <p>ASRG is organized by <a href="https://x.com/nanod1jkstra">Hari Varsha</a>. We have an in-person chapter at NYU and a remote chapter based in India. Interested in presenting? Send me an <a href="mailto:v.harivarsha@gmail.com">email</a>. Follow us on <a href="https://x.com/asrg_gg">X</a>, <a href="https://www.youtube.com/@ArcaneSystemsReadingGroup">YouTube</a>, and <a href="https://www.twitch.tv/nanod1jkstra">Twitch</a>.</p>
         </section>
     </main>
 
